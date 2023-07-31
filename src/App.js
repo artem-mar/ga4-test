@@ -40,7 +40,7 @@ const App = () => {
 
     const [[eventName, eventBody]] = Object.entries(formData)
 
-    console.log(eventName, eventBody)
+    ga4.event(eventName, eventBody)
     setFormName('')
     setBlocks([{ id: 1, field1: '', field2: '' }])
   }
